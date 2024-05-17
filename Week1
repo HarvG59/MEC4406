@@ -1,1 +1,34 @@
-print("Joshua Naumann")
+name = "Josh"
+print(name)
+print("Favourite number is 9, 9 squared is 81")
+for i in range(1, 82): # 82 due to python indexing starting at 0
+    print(i)
+
+class Engineer:
+    # Attribute
+    skill = "Problem Solver"
+    
+    def __init__(person, name, engtype, years):
+        person.name = name
+        person.type = engtype
+        person.years = years
+    
+    def disp_att(person):
+        print(f"Name: {person.name}")
+        print(f"type: {person.type}")
+        print(f"years: {person.years}")
+        print(f"skills: {Engineer.skill}")
+        
+        
+# Creating objects   
+eng1 = Engineer("Tim", "Control Systems", 15)
+eng2 = Engineer("Gail", "Electrical Engineer", 7)
+
+# Print attributes
+print("Engineer 1:")
+eng1.disp_att()
+print("Engineer 2:")
+eng2.disp_att()
+
+# Print name backwords
+print(name[::-1])
